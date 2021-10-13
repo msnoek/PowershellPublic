@@ -1,0 +1,9 @@
+{
+	"DOMAIN_CONTROLLER": "fully qualified dc name",
+	"DOMAIN": "fully qualified domain name",
+	"CONTRACTOR_OU": "contractor OU path",
+	"USER_OU": "User OU path",
+	"PRINCIPAL_SUFFIX": "@domain suffix",
+	"SERVICE_ACCOUNT": "domain\\serviceaccount",
+	"TERM_KEY": "keyvault key name"
+}

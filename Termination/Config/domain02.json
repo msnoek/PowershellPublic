@@ -1,0 +1,9 @@
+{
+	"DOMAIN_CONTROLLER": "fully qualified dc name",
+	"DOMAIN": "fully qualified domain name",
+	"DISABLE_OU": "disabled users OU path",
+	"LOG_PATH": "C:\\UserLogs\\Termination",
+	"DOMAIN_USERS": "Domain Users",
+	"SERVICE_ACCOUNT": "domain\\serviceaccount",
+	"TERM_KEY": "DomainTerminationPass"
+}

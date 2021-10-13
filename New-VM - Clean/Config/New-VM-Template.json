@@ -1,0 +1,27 @@
+{
+	"VM01": {
+		"VMName": "VMName(name at the hypervisor level)",
+		"ServerName": "ServerName (Name at the OS level)",
+		"Domain": "fq.domain.name",
+		"OU": "OU=fully,OU=qualified,OU=oupath,DC=contoso,DC=local",
+		"Notes": "Information about the VM",
+		"RAM": "4096",
+		"CPU": "4",
+		"HDD01": "60",
+		"VLAN": "1",
+		"Ticket": "12345"
+				
+	},
+	"VM02": {
+		"VMName": "VMName(name at the hypervisor level)",
+		"ServerName": "ServerName (Name at the OS level)",
+		"Domain": "fq.domain.name",
+		"OU": "OU=fully,OU=qualified,OU=oupath,DC=contoso,DC=local",
+		"Notes": "Information about the VM",
+		"RAM": "4096",
+		"CPU": "4",
+		"HDD01": "60",
+		"VLAN": "1",
+		"Ticket": "54321"
+	}
+}

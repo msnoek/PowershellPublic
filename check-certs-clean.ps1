@@ -1,4 +1,5 @@
 #Checks for the existence of a specified cert in all servers in the domain
+#Will require that powershell remoting is enabled. Won't be great for a really large number of servers.
 #By Matt Snoek matthew.snoek at gmail.com
 
 $OutputLoc = Read-Host "Enter the output location, WITHOUT trailing \"

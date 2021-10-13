@@ -1,0 +1,9 @@
+{
+	"DOMAIN_CONTROLLER": "",
+	"DOMAIN": "company.com",
+	"DISABLE_OU": "",
+	"LOG_PATH": "C:\\UserLogs\\Termination",
+	"DOMAIN_USERS": "",
+	"SERVICE_ACCOUNT": "serviceaccount@company.com",
+	"TERM_KEY": "AzureADTerminationPass"
+}

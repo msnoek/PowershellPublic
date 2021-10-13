@@ -1,0 +1,8 @@
+{
+	"ClusterName": "fully.qualified.clustername",
+	"CSVPath": "C:\\ClusterStorage\\csv-to-place-vm",
+	"Host": "fqdn.ofahost.incluster",
+	"TemplatePath": "c:\\ClusterStorage\\path\\totemplatevhdx\\2019\\2019-Template.vhdx",
+	"Domain": "domain.name.com",
+	"Switch": "Hyper-V-Network-Switch-Name"
+}

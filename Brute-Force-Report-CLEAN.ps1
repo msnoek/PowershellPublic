@@ -1,5 +1,5 @@
 #Created by Matt Snoek matthew.snoek at gmail.com
-#Script to report on number of failed logon attempts
+#Script to report on number of failed logon attempts in a given domain
 
 Import-Module ActiveDirectory
 
@@ -11,6 +11,7 @@ $smtpSender = "sender@domain.com"
 $smtpServer = "smtp.server.com"
 $OutputPath = "C:\scripts\Logs\Failed-Logons"
 $DOMAINUser = "DOMAIN\serviceaccount"
+#For future use, update the encrypted password to use a keyvault
 $EncryptedPass = Get-Content "C:\scripts\Failed-Logons\DOMAIN-Encrypted-Pass.txt" | ConvertTo-SecureString #Pulls encrypted password from text file. See README-Password-Notes.txt in C:\Scripts\Failed-Logons and https://interworks.com/blog/trhymer/2013/07/08/powershell-how-encrypt-and-store-credentials-securely-use-automation-scripts/
 $DOMAINCreds = New-Object System.Management.Automation.PsCredential($DOMAINUser, $EncryptedPass) #Creates credentials from encrypted password
 
@@ -30,7 +31,7 @@ $Event4771Object = New-Object PSObject -Property @{
     PreAuthType         = ""
 }#end 4771 object creation
 
-ForEach ($DC in $DomainControllers)
+ForEach ($DC in $DomainControllers) #Checks each domain controller's logs in turn
 {
     $Events4771DC = Get-WinEvent -ComputerName "$DC" -Credential $DOMAINCreds -FilterhashTable @{Logname='Security';ID=4771;StartTime=$EventTime}
     

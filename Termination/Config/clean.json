@@ -1,0 +1,6 @@
+{
+	"DOMAIN_CONTROLLER": "dc.domain.name.com",
+	"DOMAIN": "domain.name.com",
+	"DISABLE_OU": "OU=Disabled Users,DC=domain,DC=name,DC=com",
+	"LOG_PATH": "C:\\path\\here"
+}

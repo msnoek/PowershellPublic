@@ -1,0 +1,13 @@
+DSC Notes:
+
+	-use the dsc-metaconfig.ps1 to add servers from a central location (Create specific VM for this?), as it creates a meta config folder with the mof files. Should be able to automate this by changing the $ComputerName variable to pull from a text file created by the VM provisioning process
+		*actually, maybe not, test more
+	-then run set-dsclocalconfigurationmanager -path "wherever-.mof-was-put"
+	-can run update-dscconfiguration -verbose -wait to update local config
+
+	-For the dsc-metaconfig.ps1, make the default configuration one that installs Traps/whatever it's called now
+		*Also add logging forwarding to it for Keith
+		*Firefox/Chrome/Notepad++ updates as well?
+		*add SMB firewall rules?
+		*prometheus monitor config
+		*backup stuff
