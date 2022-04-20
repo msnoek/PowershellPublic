@@ -89,8 +89,8 @@ Configuration DscMetaConfigs
  # NOTE: DSC Node Configuration names are case sensitive in the portal.
  # TODO: edit the below as needed for your use case
 $Params = @{
-     RegistrationUrl = 'https://be6a889e-03f7-4737-860e-715e1f32b9d7.agentsvc.scus.azure-automation.net/accounts/be6a889e-03f7-4737-860e-715e1f32b9d7';
-     RegistrationKey = 'cPqRNb2sZJ4tYqxettChaEyYq8hEpDgd81P/SpJRWPVwiBVZ72tbbVH3lT2LPFMUtmcWgbfLClfR0j6/UWVK5w==';
+     RegistrationUrl = 'https://sample-url';
+     RegistrationKey = 'sample-key';
      ComputerName = @('<some VM to onboard>', '<some other VM to onboard>');
      NodeConfigurationName = 'SimpleConfig.webserver';
      RefreshFrequencyMins = 30;
